@@ -1,4 +1,4 @@
-#define pin_tombol 10
+#define pin_tombol 11
 #define pin_led_merah 12
 #define pin_led_kuning 13
 #define pin_led_hijau 14
