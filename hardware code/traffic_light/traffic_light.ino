@@ -1,13 +1,11 @@
-#define button_1 11
+#define button_1 2
 #define red_led_1 12
 #define yellow_led_1 13
 #define green_led_1 14
 
-int button_1_state = 0;
-
 void setup() 
 {
-  pinMode(button_1, INPUT);
+  pinMode(button_1, INPUT_PULLUP);
   pinMode(red_led_1, OUTPUT);
   pinMode(yellow_led_1, OUTPUT);
   pinMode(green_led_1, OUTPUT);
@@ -15,11 +13,8 @@ void setup()
 
 void loop() 
 {
-  // read state of button 1
-  button_1_state = digitalRead(button_1);
-
-  // if button is pressed, state == HIGH
-  if(button_1_state == HIGH)
+  // if button is pressed == LOW
+  if(digitalRead(button_1) == LOW)
   {
     digitalWrite(red_led_1, HIGH);
   }
