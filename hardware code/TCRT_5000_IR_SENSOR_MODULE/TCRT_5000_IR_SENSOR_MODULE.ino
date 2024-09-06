@@ -1,39 +1,19 @@
-//Circuit
-// Arduino Uno  -->   TCRT5000
-// 5v           --->   VCC
-// Grnd         --->   Grnd
-// A0           --->   A0
-// D8           --->   D0
+#define LED1 2
+#define LED2 3
+#define Sensor 5
 
-
-#define pinIRd 8
-#define pinLED 12
-int IRvalueA = 0;
-int IRvalueD = 0;
-
-void setup()
-{
-  Serial.begin(9600);
-  pinMode(pinIRd,INPUT);
-  pinMode(pinLED,OUTPUT);
-
+void setup() {
+  pinMode(LED1, OUTPUT);
+  pinMode(LED2, OUTPUT);
+  pinMode(Sensor, INPUT);
 }
-
-void loop()
-{
-  Serial.print("\t Digital Reading=");
-  Serial.println(IRvalueD);
-
-    if (IRvalueD == LOW) {
-    digitalWrite(pinLED, HIGH);
+void loop() {
+  bool value = digitalRead(Sensor);
+  if (value == 1) {
+    digitalWrite(LED1, HIGH);
+    digitalWrite(LED2, LOW);
+  } else if (value == 0) {
+    digitalWrite(LED2, HIGH);
+    digitalWrite(LED1, LOW);
   }
-  else {
-    digitalWrite(pinLED, LOW);
-  }
-
-
-  delay(500);
-  
-  IRvalueD = digitalRead(pinIRd);
-
 }
