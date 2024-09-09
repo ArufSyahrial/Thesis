@@ -1,6 +1,6 @@
 #define LED1 2
 #define LED2 3
-#define Sensor 5
+//#define Sensor 5
 
 void setup() {
   pinMode(LED1, OUTPUT);
