@@ -1,6 +1,14 @@
 Pembimbing 1: Ilham Firman Ashari, S.Kom., M.T.
 
 Pembimbing 2: Andika Setiawan, S.Kom., M.Cs.
+1. Perbaiki draft sesuai catatan
+2. Análisis penggunaan & pemilihan perangkat perlu diperkuat. Issue = congestion, maintenance, case study
+3. Pemrosesan model suara perlu dibahas
+4. Batasi scope di Bataan masalah untuk jenis suara dan perangkat. 
+
+- Bab 1.2 nomor 1 (tambahkan "metode")
+- Bab 2.2.11 gambar 2.11 (dibuat dalam bentuk tabel)
+- Bab 3.3.2 tabel 3.5 (header dan isi tabel jangan dipisah)
 
 Penguji 1: Winda Yulita, M.Cs.
 
