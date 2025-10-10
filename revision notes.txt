@@ -6,7 +6,10 @@ Pembimbing 2: Andika Setiawan, S.Kom., M.Cs.
 3. Pemrosesan model suara perlu dibahas.
 4. Batasi scope di Bataan masalah untuk jenis suara dan perangkat. 
 
-- Bab 1.2 nomor 1 (tambahkan "metode").
+- Bab 1.2 nomor 2 (tambahkan "metode").
+2. Bagaimana metode evaluasi kinerja sistem dalam pengaturan lampu lalu lintas.
+- Bab 1.3 nomor 2
+2. Mengetahui metode evaluați kinerja sistem salam pengaturan lampu lalu lintas.
 - Bab 2.2.11 gambar 2.11 (dibuat dalam bentuk tabel).
 - Bab 3.3.2 tabel 3.5 (header dan isi tabel jangan dipisah).
 
