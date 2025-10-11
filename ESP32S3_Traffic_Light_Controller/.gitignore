@@ -1,0 +1,10 @@
+.pio
+.vscode
+.idea
+.DS_Store
+*.local
+*.bin
+*.elf
+*.map
+*.lst
+data/performance_logs/*
