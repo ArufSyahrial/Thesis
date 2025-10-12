@@ -1,7 +1,7 @@
 Pembimbing 1: Ilham Firman Ashari, S.Kom., M.T.
 
 Pembimbing 2: Andika Setiawan, S.Kom., M.Cs.
-1. Perbaiki draft sesuai catatan.
+(✓) 1. Perbaiki draft sesuai catatan.
 2. Análisis penggunaan & pemilihan perangkat perlu diperkuat. Issue = congestion, maintenance, case study.
 3. Pemrosesan model suara perlu dibahas.
 (✓) 4. Batasi scope di Bataan masalah untuk jenis suara dan perangkat.
@@ -16,12 +16,9 @@ Penguji 1: Winda Yulita, M.Cs.
 
 Penguji 2: Miranti Verdiana, M.Si
 1. Rancangan belum terlihat pada bab 3.
-2. Bab 2 berisi teori secara umum sedangkan pada bab 3 adalah uraian secara khusus dari metode yang digunakan disesuaikan dengan penelitian yang akan dilakukan. 
-3. Batasan masalah perlu diperjelas untuk ruang lingkup penelitian yang dilakukan.
+(✓) 2. Bab 2 berisi teori secara umum sedangkan pada bab 3 adalah uraian secara khusus dari metode yang digunakan disesuaikan dengan penelitian yang akan dilakukan. 
+(✓) 3. Batasan masalah perlu diperjelas untuk ruang lingkup penelitian yang dilakukan.
 (✓) 4. Kata yang tidak ada di KBBI perlu di italic.
-5. Cek template laporan terbaru untuk penyusunan laporan.
+(✓) 5. Cek template laporan terbaru untuk penyusunan laporan.
 6. Dll sesuai dengan laporan, pada saat revisi bawa kembali draft proposal yang sudah dicoret. 
 (✓) 7. Perlu adanya kelas tambahan untuk suara klakson (diskusikan dengan dosen pembimbing). --> (batasan masalah mencakup hanya suara sirine ambulace)
-
-
-- Bab 3.4.1 (jelaskan perbedaan gambar 3.5 dan gambar 3.6).
