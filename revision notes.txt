@@ -9,8 +9,8 @@ Pembimbing 2: Andika Setiawan, S.Kom., M.Cs.
 Penguji 1: Winda Yulita, M.Cs.
 1. Tambahkan dataset untuk suara lain untuk perkaya dataset.
 (✓) 2. Skenario 2 ambulance. --> (batasan masalah mencakup 1 ambulance)
-3. Skenario evaluasi terutama CNN.
-4. Skenario variasi uji coba untuk beberapa keadaan (jalan bising, sedang, tidak bising).
+(✓) 3. Skenario evaluasi terutama CNN.
+(✓) 4. Skenario variasi uji coba untuk beberapa keadaan (jalan bising, sedang, tidak bising).
 5. Lengkapi bab 3 terkait CNN.
 (✓) 6. Pertimbangkan aplikasi monitoring. --> (batasan masalah mencakup hanya sistem pendeteksi suara)
 
