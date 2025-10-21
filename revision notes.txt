@@ -5,6 +5,10 @@ Pembimbing 2: Andika Setiawan, S.Kom., M.Cs.
 2. Análisis penggunaan & pemilihan perangkat perlu diperkuat. Issue = congestion, maintenance, case study.
 3. Pemrosesan model suara perlu dibahas.
 (✓) 4. Batasi scope di Bataan masalah untuk jenis suara dan perangkat.
+5. Penelitian belum selesai
+6. Sebaiknya dipastikan kembali scope penelitian yang akan diselesaikan
+7. Dokumen laporan perlu disesuaikan dengan format yang ada
+8. Persiapan sebelum seminar perlu dibenahi, khususnya untuk konfirmasi ke dosen
 
 Penguji 1: Winda Yulita, M.Cs.
 1. Tambahkan dataset untuk suara lain untuk perkaya dataset.
@@ -13,6 +17,28 @@ Penguji 1: Winda Yulita, M.Cs.
 (✓) 4. Skenario variasi uji coba untuk beberapa keadaan (jalan bising, sedang, tidak bising).
 5. Lengkapi bab 3 terkait CNN.
 (✓) 6. Pertimbangkan aplikasi monitoring. --> (batasan masalah mencakup hanya sistem pendeteksi suara)
+7. Rapikan tata tulis
+8. Buat perhitungan manual CNN kyak konvolusi dan pooling di bab 3
+9. Tambahkan dataset
+
+Penguji 2: Leslie Anggraini, S.Kom., M.Cs.
+1. Laporannya kurang rapih untuk layouting
+2. Latar belakangnya kurang jelas urgensinya, alasan kenapa kalau deteksi kepadatan jadi solusinya dan mana jurnal pendukung kalau itu bisa dijadikan solusinya? Berdasarkan apa, kemudian wawancara ke siapa dan kapan?
+3. Rumusan masalah dan tujuan juga kurang sesuai dgn penelitian
+4. Harus ada caption tabel/gambar/rumus, dan juga ada mention urutannya di narasi
+5. Tinjauan studi dinarasikan dulu baru tabel, perbaiki tabelnya ada kolom No, Peneliti, Judul, Metode/Algortima, Hardware/Sensor, dan Hasil (dalam hasil ada quantity-nya)
+6. Perbaiki penulisan sub bab
+7. Sub bab 2.2.11 perbaiki penulisan rumus dan confusion matrix dibuat tabel. Kenapa tidak ada f1-score?
+8. Tidak diperkenankan bulleting dalam laporan, silahkan perbaiki
+9. Dimana penjelasan akusisi datasetnya di bab 3, kemudian arsitektur CNN yang kamu usulkan untuk hyperparameternya dimana di BAB 3?
+10. Pengujian sistem belum ada hasil sama sekali, bahkan analisis hasil uji juga tidak ada. Tiba tiba udah ada kesimpulan
+11. Hasilnya juga kurang jelas untuk dijabarkan hanya kode program, dan tidak ada penjelasan gambaran/purwarupanya
+12. Dimana lampiran pertanyaan wawancara yg sudah di TTD? Dan mana jawaban dari hasil wawancara di BAB 3?
+13. Harus ada DOI dalam daftar pustaka
+14. Kalau deteksi, hasil deteksinya apa? Klasifikasinya nanti apa dan harus dijelaskan di BAB 3 & 4
+15. Kalau bukan ambulance, kenapa bisa kendaraan lain lolos kalau lampunya set hijau?
+16. Batasi scopenya, ini cakupannya besar dan seharusnya ada pengujiannya jarak, noise, dll.
+
 
 Penguji 2: Miranti Verdiana, M.Si
 1. Rancangan belum terlihat pada bab 3.
