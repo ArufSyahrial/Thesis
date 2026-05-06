@@ -1,5 +1,6 @@
 Pembimbing 1: Ilham Firman Ashari, S.Kom., M.T.
 
+
 Pembimbing 2: Andika Setiawan, S.Kom., M.Cs.
 (✓) 1. Perbaiki draft sesuai catatan.
 2. Análisis penggunaan & pemilihan perangkat perlu diperkuat. Issue = congestion, maintenance, case study.
@@ -10,21 +11,23 @@ Pembimbing 2: Andika Setiawan, S.Kom., M.Cs.
 7. Dokumen laporan perlu disesuaikan dengan format yang ada
 8. Persiapan sebelum seminar perlu dibenahi, khususnya untuk konfirmasi ke dosen
 
+
 Penguji 1: Winda Yulita, M.Cs.
 1. Tambahkan dataset untuk suara lain untuk perkaya dataset.
 (✓) 2. Skenario 2 ambulance. --> (batasan masalah mencakup 1 ambulance)
-(✓) 3. Skenario evaluasi terutama CNN.
-(✓) 4. Skenario variasi uji coba untuk beberapa keadaan (jalan bising, sedang, tidak bising).
+3. Skenario evaluasi terutama CNN.
+4. Skenario variasi uji coba untuk beberapa keadaan (jalan bising, sedang, tidak bising).
 5. Lengkapi bab 3 terkait CNN.
 (✓) 6. Pertimbangkan aplikasi monitoring. --> (batasan masalah mencakup hanya sistem pendeteksi suara)
-7. Rapikan tata tulis
+(✓) 7. Rapikan tata tulis
 8. Buat perhitungan manual CNN kyak konvolusi dan pooling di bab 3
 9. Tambahkan dataset
 
+
 Penguji 2: Leslie Anggraini, S.Kom., M.Cs.
-1. Laporannya kurang rapih untuk layouting
-2. Latar belakangnya kurang jelas urgensinya, alasan kenapa kalau deteksi kepadatan jadi solusinya dan mana jurnal pendukung kalau itu bisa dijadikan solusinya? Berdasarkan apa, kemudian wawancara ke siapa dan kapan?
-3. Rumusan masalah dan tujuan juga kurang sesuai dgn penelitian
+(✓) 1. Laporannya kurang rapih untuk layouting
+(✓) 2. Latar belakangnya kurang jelas urgensinya, alasan kenapa kalau deteksi kepadatan jadi solusinya dan mana jurnal pendukung kalau itu bisa dijadikan solusinya? Berdasarkan apa, kemudian wawancara ke siapa dan kapan?
+(✓) 3. Rumusan masalah dan tujuan juga kurang sesuai dgn penelitian
 4. Harus ada caption tabel/gambar/rumus, dan juga ada mention urutannya di narasi
 5. Tinjauan studi dinarasikan dulu baru tabel, perbaiki tabelnya ada kolom No, Peneliti, Judul, Metode/Algortima, Hardware/Sensor, dan Hasil (dalam hasil ada quantity-nya)
 6. Perbaiki penulisan sub bab
@@ -38,6 +41,7 @@ Penguji 2: Leslie Anggraini, S.Kom., M.Cs.
 14. Kalau deteksi, hasil deteksinya apa? Klasifikasinya nanti apa dan harus dijelaskan di BAB 3 & 4
 15. Kalau bukan ambulance, kenapa bisa kendaraan lain lolos kalau lampunya set hijau?
 16. Batasi scopenya, ini cakupannya besar dan seharusnya ada pengujiannya jarak, noise, dll.
+
 
 
 Penguji 2: Miranti Verdiana, M.Si
