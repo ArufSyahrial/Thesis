@@ -1,0 +1,151 @@
+Penjelasan Program Lengkap
+1. Konsep Sistem
+
+Program ini adalah Sistem Lampu Lalu Lintas Cerdas yang dapat mendeteksi sirene ambulans menggunakan machine learning dan memberikan prioritas jalan untuk ambulans.
+2. Komponen Utama
+a. Deteksi Ambulans
+
+    Dual Microphone: Dua mikrofon INMP441 untuk mendeteksi ambulans dari dua jalur berbeda
+
+    AI Model: Model TensorFlow Lite yang sudah dilatih untuk mengenali sirene ambulans
+
+    Feature Extraction: Ekstraksi fitur audio dari sinyal mentah
+
+b. Kontrol Lampu Lalu Lintas
+
+    3 Jalur: Mengontrol lampu untuk tiga persimpangan
+
+    Siklus Normal: Rotasi hijau-kuning-merah otomatis
+
+    Mode Emergency: Prioritas untuk ambulans terdeteksi
+
+3. Alur Kerja Program
+Setup Awal:
+cpp
+
+void setup() {
+  // Inisialisasi serial, pin, dan memory
+  // Load model AI
+  // Konfigurasi I2S untuk mikrofon
+  // Test mikrofon
+  // Mulai siklus normal
+}
+
+Loop Utama:
+cpp
+
+void loop() {
+  if (Mode Normal) {
+    - Jalankan siklus lampu normal
+    - Cek audio setiap 2 detik
+    - Jika deteksi ambulans → Mode Emergency
+  }
+  if (Mode Emergency) {
+    - Beri prioritas jalur ambulans
+    - Setelah 20 detik → Kembali ke fase sebelumnya
+  }
+}
+
+4. Fitur Cerdas
+a. Deteksi Konfirmasi
+cpp
+
+// Butuh 2 deteksi berurutan untuk konfirmasi
+if (prob_jalur1 > 0.9f) {
+  detection_count_jalur1++;
+  if (detection_count_jalur1 >= 2) {
+    // Konfirmasi ambulans di jalur 1
+  }
+}
+
+b. Memory Fase
+cpp
+
+// Simpan fase sebelum emergency
+phaseBeforeEmergency = currentPhase;
+
+// Kembali ke fase yang sama setelah emergency
+currentPhase = phaseBeforeEmergency;
+
+c. Siklus Normal
+text
+
+Jalur 1 HIJAU (15s) 
+→ Jalur 1 KUNING (3s) 
+→ SEMUA MERAH (2s)
+→ Jalur 2 HIJAU (15s)
+→ Jalur 2 KUNING (3s)  
+→ SEMUA MERAH (2s)
+→ Jalur 3 HIJAU (15s)
+→ Jalur 3 KUNING (3s)
+→ SEMUA MERAH (2s)
+→ Ulang...
+
+5. Spesifikasi Teknis
+Audio Processing:
+
+    Sample Rate: 16 kHz
+
+    Recording Duration: 200 ms
+
+    Features: 24 fitur energi frame
+
+    Buffer Size: 256 samples
+
+AI Model:
+
+    Format: TensorFlow Lite INT8
+
+    Input: 24 fitur audio
+
+    Output: Probability ambulans (0-1)
+
+    Memory: 160KB tensor arena
+
+Timing:
+
+    Audio Check: Setiap 2 detik
+
+    Emergency Duration: 20 detik
+
+    Green Light: 15 detik
+
+    Yellow Light: 3 detik
+
+    All Red: 2 detik
+
+6. Keunggulan Sistem
+
+    Real-time Detection: Deteksi sirene dalam 200ms
+
+    Dual Channel: Bisa bedakan ambulans dari dua arah
+
+    Fail-Safe: Error handling dan state recovery
+
+    Memory Aware: Kembali ke fase sebelumnya setelah emergency
+
+    Monitoring: Statistik performa dan deteksi
+
+7. Debugging & Monitoring
+
+Program menyediakan output serial yang lengkap:
+
+    Status fase lampu
+
+    Probabilitas deteksi per jalur
+
+    Statistik performa sistem
+
+    Error reporting
+
+8. Penggunaan Daya
+
+    Mikrofon: INMP441 (low power)
+
+    LED: GPIO controlled
+
+    AI Inference: Optimized INT8 model
+
+    Suitable untuk deployment lapangan
+
+Sistem ini cocok untuk implementasi smart city dengan kemampuan responsif terhadap kendaraan emergency sambil mempertahankan alur lalu lintas normal yang efisien.

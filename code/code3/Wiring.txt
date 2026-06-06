@@ -1,0 +1,120 @@
+=============================================
+WIRING ESP32-S3 SMART TRAFFIC SYSTEM
+=============================================
+
+Mikrofon INMP441 (Dual Stereo):
+--------------------------------
+INMP441 Kiri (Jalur 1) & Kanan (Jalur 2):
+  WS   (LRCLK)  -> GPIO 42
+  SCK  (BCLK)   -> GPIO 41
+  SD   (DOUT)   -> GPIO 40
+  VDD           -> 3.3V
+  GND           -> GND
+  L/R           -> microfon 1(GND), microfon 2 (3v3) 
+
+Lampu Lalu Lintas Jalur 1:
+-------------------------
+RED_1    -> GPIO 10
+YELLOW_1 -> GPIO 11  
+GREEN_1  -> GPIO 12
+
+Lampu Lalu Lintas Jalur 2:
+-------------------------
+RED_2    -> GPIO 4
+YELLOW_2 -> GPIO 5
+GREEN_2  -> GPIO 6
+
+Lampu Lalu Lintas Jalur 3:
+-------------------------
+RED_3    -> GPIO 7
+YELLOW_3 -> GPIO 15
+GREEN_3  -> GPIO 16
+
+=============================================
+SETTING ARDUINO IDE UNTUK ESP32-S3
+=============================================
+
+1. INSTALASI BOARD ESP32:
+   - File → Preferences → Additional Boards Manager URLs:
+     https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+
+2. INSTAL BOARD:
+   - Tools → Board → Boards Manager
+   - Cari "ESP32" dan install "ESP32 by Espressif Systems"
+
+3. PILIH BOARD:
+   - Tools → Board → ESP32 Arduino → "ESP32S3 Dev Module"
+
+4. KONFIGURASI BOARD SETTINGS:
+   - USB CDC On Boot: Enabled
+   - CPU Frequency: 240MHz (WiFi)
+   - Flash Mode: QIO 80MHz
+   - Flash Size: 16MB (128Mb)
+   - Partition Scheme: 16MB Flash (3MB APP/9.9MB FATFS) // Opsi yang mendukung PSRAM
+   - PSRAM: OPI PSRAM
+   - Upload Mode: Internal USB
+
+5. INSTAL LIBRARY YANG DIPERLUKAN:
+   - Sketch → Include Library → Manage Libraries
+   - Cari dan install:
+     * "Arduino TensorFlow Lite" oleh TensorFlow Authors
+     * "ESP32-audioI2S" (opsional, untuk debugging audio)
+
+6. SETTING UNTUK TENSORFLOW LITE:
+   - Tools → Partition Scheme → pilih scheme dengan PSRAM support
+   - Pastikan PSRAM diaktifkan di code: `psramFound()` akan return true
+
+7. UPLOAD SETTINGS:
+   - Port: Pilih port USB yang terdeteksi (COMx di Windows, /dev/cu.usbmodem di Mac)
+   - Programmer: ESP32S3 USB JTAG
+
+8. KONFIGURASI UNTUK DEBUGGING:
+   - Serial Monitor baud rate: 115200
+   - Tools → Core Debug Level: → Info (untuk melihat lebih banyak log)
+
+=============================================
+TROUBLESHOOTING ARDUINO IDE:
+=============================================
+
+1. ERROR "Failed to connect to ESP32-S3":
+   - Tekan tombol BOOT saat uploading
+   - Pastikan kabel USB data (bukan hanya charge)
+
+2. ERROR PSRAM NOT DETECTED:
+   - Pastikan partition scheme yang dipilih mendukung PSRAM
+   - Board setting: PSRAM → OPI PSRAM
+
+3. ERROR TENSORFLOW COMPILATION:
+   - Pastikan library TensorFlow Lite terinstall
+   - Coba compile dengan partition scheme berbeda
+
+4. MEMORY ISSUES:
+   - Gunakan PSRAM: `tensor_arena = (uint8_t*)ps_malloc(kTensorArenaSize);`
+   - Monitor memory usage dengan `ESP.getFreeHeap()`
+
+5. I2S AUDIO ISSUES:
+   - Pastikan pin I2S sesuai wiring
+   - Check clock configuration (32-bit, 16kHz)
+   - Verify dengan testMicrophones()
+
+=============================================
+PINOUT ESP32-S3 YANG DIGUNAKAN:
+=============================================
+
+GPIO  4  : RED_2
+GPIO  5  : YELLOW_2  
+GPIO  6  : GREEN_2
+GPIO  7  : RED_3
+GPIO 10  : RED_1
+GPIO 11  : YELLOW_1
+GPIO 12  : GREEN_1
+GPIO 15  : YELLOW_3
+GPIO 16  : GREEN_3
+GPIO 40  : I2S_SD (Data)
+GPIO 41  : I2S_SCK (Clock)
+GPIO 42  : I2S_WS (Word Select)
+
+CATATAN PIN ESP32-S3:
+- Hindari GPIO 1-20 untuk output high-current
+- GPIO 34-39 hanya input (tidak ada internal pull-up)
+- GPIO yang digunakan di atas aman untuk output LED
