@@ -1,0 +1,51 @@
+Traffic Light Module 1:
+  GPIO1  → RED LED (via 220Ω resistor)
+  GPIO2  → YELLOW LED (via 220Ω resistor)
+  GPIO3  → GREEN LED (via 220Ω resistor)
+
+Traffic Light Module 2:
+  GPIO4  → RED LED (via 220Ω resistor)
+  GPIO5  → YELLOW LED (via 220Ω resistor)
+  GPIO6  → GREEN LED (via 220Ω resistor)
+
+Traffic Light Module 3:
+  GPIO7  → RED LED (via 220Ω resistor)
+  GPIO15 → YELLOW LED (via 220Ω resistor)
+  GPIO16 → GREEN LED (via 220Ω resistor)
+
+I2S Microphones:
+  GPIO41 → I2S_SCK (Shared by both mics)
+  GPIO42 → I2S_WS (Shared by both mics)
+  GPIO40 → I2S_SD_LEFT (Mic #1 only)
+  GPIO39 → I2S_SD_RIGHT (Mic #2 only)
+
+
+  INMP441(1) Pin → ESP32-S3 Pin
+─────────────────────────────
+VDD         → 3.3V
+GND         → GND
+SCK         → GPIO41
+WS          → GPIO42
+SD          → GPIO40
+L/R         → GND (IMPORTANT!)
+
+INMP441(2) Pin → ESP32-S3 Pin
+─────────────────────────────
+VDD         → 3.3V
+GND         → GND
+SCK         → GPIO41 (Shared)
+WS          → GPIO42 (Shared)
+SD          → GPIO39
+L/R         → 3.3V (IMPORTANT!)
+
+
+ESP32 3.3V Output → Breadboard Power Rail (+)
+                 ├→ INMP441 #1 VDD
+                 ├→ INMP441 #2 VDD
+                 └→ Mic #2 L/R pin
+
+ESP32 GND       → Breadboard Ground Rail (-)
+                 ├→ INMP441 #1 GND
+                 ├→ INMP441 #2 GND
+                 ├→ Mic #1 L/R pin
+                 └→ All LED cathodes (via resistors)
