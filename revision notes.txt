@@ -1,4 +1,17 @@
 Pembimbing 1: Ilham Firman Ashari, S.Kom., M.T.
+1. Buat research gap
+2. Learning rate?
+(✓) 3. Hapus alat yang tidak terpakai
+4. Sesuaikan coding dengan bab
+5. Jelaskan alat dan bahan perangkat lunak
+6. Kenapa tidak pakai k-fold?
+7. Analisis confusion matrix
+8. Apakah ada perbandingan alat di pengujian?
+9. Justifikasi/dasar ilmu pengujian
+10. Apakah ada nilai yg menjadi acuan pengujian mikrofon?
+11. Penjelasan hyperparameter, mfcc di bab 2
+12. Buat batasan masalah mengenai traffic flow
+13. Lampiran hasil wawancara, foto dan ttd
 
 
 Pembimbing 2: Andika Setiawan, S.Kom., M.Cs.
@@ -6,40 +19,41 @@ Pembimbing 2: Andika Setiawan, S.Kom., M.Cs.
 2. Análisis penggunaan & pemilihan perangkat perlu diperkuat. Issue = congestion, maintenance, case study.
 3. Pemrosesan model suara perlu dibahas.
 (✓) 4. Batasi scope di Bataan masalah untuk jenis suara dan perangkat.
-5. Penelitian belum selesai
-6. Sebaiknya dipastikan kembali scope penelitian yang akan diselesaikan
-7. Dokumen laporan perlu disesuaikan dengan format yang ada
-8. Persiapan sebelum seminar perlu dibenahi, khususnya untuk konfirmasi ke dosen
+(✓) 5. Penelitian belum selesai
+(✓) 6. Sebaiknya dipastikan kembali scope penelitian yang akan diselesaikan
+(✓) 7. Dokumen laporan perlu disesuaikan dengan format yang ada
+(✓) 8. Persiapan sebelum seminar perlu dibenahi, khususnya untuk konfirmasi ke dosen
+9. Kesimpulan berdasarkan rumusan masalah
 
 
 Penguji 1: Winda Yulita, M.Cs.
 1. Tambahkan dataset untuk suara lain untuk perkaya dataset.
 (✓) 2. Skenario 2 ambulance. --> (batasan masalah mencakup 1 ambulance)
-3. Skenario evaluasi terutama CNN.
-4. Skenario variasi uji coba untuk beberapa keadaan (jalan bising, sedang, tidak bising).
+(✓) 3. Skenario evaluasi terutama CNN.
+(✓) 4. Skenario variasi uji coba untuk beberapa keadaan (jalan bising, sedang, tidak bising). --> (pengujian dengan jarak sumber suara yang berbeda, pengujian latensi dengan jarak sumber suara yang berbeda)
 5. Lengkapi bab 3 terkait CNN.
 (✓) 6. Pertimbangkan aplikasi monitoring. --> (batasan masalah mencakup hanya sistem pendeteksi suara)
 (✓) 7. Rapikan tata tulis
 8. Buat perhitungan manual CNN kyak konvolusi dan pooling di bab 3
-9. Tambahkan dataset
+(✓) 9. Tambahkan dataset --> (dataset dipisah menjadi traning, validation, dan testing)
 
 
 Penguji 2: Leslie Anggraini, S.Kom., M.Cs.
-(✓) 1. Laporannya kurang rapih untuk layouting
-(✓) 2. Latar belakangnya kurang jelas urgensinya, alasan kenapa kalau deteksi kepadatan jadi solusinya dan mana jurnal pendukung kalau itu bisa dijadikan solusinya? Berdasarkan apa, kemudian wawancara ke siapa dan kapan?
+(✓) 1. Laporannya kurang rapih untuk layouting 
+(✓) 2. Latar belakangnya kurang jelas urgensinya, alasan kenapa kalau deteksi kepadatan jadi solusinya dan mana jurnal pendukung kalau itu bisa dijadikan solusinya? Berdasarkan apa, kemudian wawancara ke siapa dan kapan? 
 (✓) 3. Rumusan masalah dan tujuan juga kurang sesuai dgn penelitian
-4. Harus ada caption tabel/gambar/rumus, dan juga ada mention urutannya di narasi
-5. Tinjauan studi dinarasikan dulu baru tabel, perbaiki tabelnya ada kolom No, Peneliti, Judul, Metode/Algortima, Hardware/Sensor, dan Hasil (dalam hasil ada quantity-nya)
-6. Perbaiki penulisan sub bab
-7. Sub bab 2.2.11 perbaiki penulisan rumus dan confusion matrix dibuat tabel. Kenapa tidak ada f1-score?
-8. Tidak diperkenankan bulleting dalam laporan, silahkan perbaiki
-9. Dimana penjelasan akusisi datasetnya di bab 3, kemudian arsitektur CNN yang kamu usulkan untuk hyperparameternya dimana di BAB 3?
+(✓) 4. Harus ada caption tabel/gambar/rumus, dan juga ada mention urutannya di narasi
+(✓) 5. Tinjauan studi dinarasikan dulu baru tabel, perbaiki tabelnya ada kolom No, Peneliti, Judul, Metode/Algortima, Hardware/Sensor, dan Hasil (dalam hasil ada quantity-nya)
+(✓) 6. Perbaiki penulisan sub bab
+(✓) 7. Sub bab 2.2.11 perbaiki penulisan rumus dan confusion matrix dibuat tabel. Kenapa tidak ada f1-score?
+(✓) 8. Tidak diperkenankan bulleting dalam laporan, silahkan perbaiki
+(✓) 9. Dimana penjelasan akusisi datasetnya di bab 3, kemudian arsitektur CNN yang kamu usulkan untuk hyperparameternya dimana di BAB 3?
 10. Pengujian sistem belum ada hasil sama sekali, bahkan analisis hasil uji juga tidak ada. Tiba tiba udah ada kesimpulan
-11. Hasilnya juga kurang jelas untuk dijabarkan hanya kode program, dan tidak ada penjelasan gambaran/purwarupanya
+(✓) 11. Hasilnya juga kurang jelas untuk dijabarkan hanya kode program, dan tidak ada penjelasan gambaran/purwarupanya
 12. Dimana lampiran pertanyaan wawancara yg sudah di TTD? Dan mana jawaban dari hasil wawancara di BAB 3?
-13. Harus ada DOI dalam daftar pustaka
+(✓) 13. Harus ada DOI dalam daftar pustaka
 14. Kalau deteksi, hasil deteksinya apa? Klasifikasinya nanti apa dan harus dijelaskan di BAB 3 & 4
-15. Kalau bukan ambulance, kenapa bisa kendaraan lain lolos kalau lampunya set hijau?
+15. Kalau bukan ambulance, kenapa bisa kendaraan lain lolos kalau lampunya set hijau? --> (dikarenakan kendaraan lain mengikuti lampu hijau)
 16. Batasi scopenya, ini cakupannya besar dan seharusnya ada pengujiannya jarak, noise, dll.
 
 
