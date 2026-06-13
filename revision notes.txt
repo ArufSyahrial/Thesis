@@ -1,23 +1,23 @@
 Pembimbing 1: Ilham Firman Ashari, S.Kom., M.T.
-1. Buat research gap
+(✓) 1. Buat research gap
 2. Learning rate?
 (✓) 3. Hapus alat yang tidak terpakai
-4. Sesuaikan coding dengan bab
+(✓) 4. Sesuaikan coding dengan bab
 5. Jelaskan alat dan bahan perangkat lunak
 6. Kenapa tidak pakai k-fold?
-7. Analisis confusion matrix
-8. Apakah ada perbandingan alat di pengujian?
+(✓) 7. Analisis confusion matrix
+(✓) 8. Apakah ada perbandingan alat di pengujian? --> (tidak ada perbandingan alat dikarenakan alatnya tidak ada)
 9. Justifikasi/dasar ilmu pengujian
 10. Apakah ada nilai yg menjadi acuan pengujian mikrofon?
-11. Penjelasan hyperparameter, mfcc di bab 2
-12. Buat batasan masalah mengenai traffic flow
-13. Lampiran hasil wawancara, foto dan ttd
+(✓) 11. Penjelasan hyperparameter, mfcc di bab 2
+(✓) 12. Buat batasan masalah mengenai traffic flow
+(✓) 13. Lampiran hasil wawancara, foto dan ttd
 
 
 Pembimbing 2: Andika Setiawan, S.Kom., M.Cs.
 (✓) 1. Perbaiki draft sesuai catatan.
 2. Análisis penggunaan & pemilihan perangkat perlu diperkuat. Issue = congestion, maintenance, case study.
-3. Pemrosesan model suara perlu dibahas.
+(✓) 3. Pemrosesan model suara perlu dibahas.
 (✓) 4. Batasi scope di Bataan masalah untuk jenis suara dan perangkat.
 (✓) 5. Penelitian belum selesai
 (✓) 6. Sebaiknya dipastikan kembali scope penelitian yang akan diselesaikan
@@ -27,7 +27,7 @@ Pembimbing 2: Andika Setiawan, S.Kom., M.Cs.
 
 
 Penguji 1: Winda Yulita, M.Cs.
-1. Tambahkan dataset untuk suara lain untuk perkaya dataset.
+(✓) 1. Tambahkan dataset untuk suara lain untuk perkaya dataset.
 (✓) 2. Skenario 2 ambulance. --> (batasan masalah mencakup 1 ambulance)
 (✓) 3. Skenario evaluasi terutama CNN.
 (✓) 4. Skenario variasi uji coba untuk beberapa keadaan (jalan bising, sedang, tidak bising). --> (pengujian dengan jarak sumber suara yang berbeda, pengujian latensi dengan jarak sumber suara yang berbeda)
@@ -59,10 +59,10 @@ Penguji 2: Leslie Anggraini, S.Kom., M.Cs.
 
 
 Penguji 2: Miranti Verdiana, M.Si
-1. Rancangan belum terlihat pada bab 3.
+(✓) 1. Rancangan belum terlihat pada bab 3.
 (✓) 2. Bab 2 berisi teori secara umum sedangkan pada bab 3 adalah uraian secara khusus dari metode yang digunakan disesuaikan dengan penelitian yang akan dilakukan. 
 (✓) 3. Batasan masalah perlu diperjelas untuk ruang lingkup penelitian yang dilakukan.
 (✓) 4. Kata yang tidak ada di KBBI perlu di italic.
 (✓) 5. Cek template laporan terbaru untuk penyusunan laporan.
-6. Dll sesuai dengan laporan, pada saat revisi bawa kembali draft proposal yang sudah dicoret. 
+(✓) 6. Dll sesuai dengan laporan, pada saat revisi bawa kembali draft proposal yang sudah dicoret. 
 (✓) 7. Perlu adanya kelas tambahan untuk suara klakson (diskusikan dengan dosen pembimbing). --> (batasan masalah mencakup hanya suara sirine ambulace)
