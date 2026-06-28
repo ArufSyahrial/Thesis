@@ -1,0 +1,25 @@
+Pembimbing 1: Ilham Firman Ashari, S.Kom., M.T.
+1. Kuantisasi (Kode 4.16) disebut "memperkecil ukuran" tetapi ukuran sebelum/sesudah tidak pernah ditampilkan. Interpreter yang dipakai di ESP32 (TFLite Micro / EloquentTinyML) dan kode inferensinya juga tidak ditunjukkan, storage kapasitas ESP 32
+2.prioritas layanan ambulans??? dibagian mana? sesuaikan lagi judul dan isi laporan
+(✓) 3. tata tulis disesuaikan kembali --> (format penomoran, margin, ukuran kertas, font, ukuran font)
+4. analisis model CNN tidak ada
+5. kuantisasi model
+6. judul tidak sinkron dgn isi
+7. Kode 4.1, baris np.mean(mfccs.T, axis=0) merata-ratakan seluruh frame waktu, sehingga tinggal satu vektor 40 angka per file yg menyebabkan dimensi waktu hilang. Konsekuensinya suara sirine yang paling khas, yakni nada yang naik-turun berulang sepanjang waktu, ikut terhapus karena dirata-ratakan. Model hanya melihat profil frekuensi rata-rata. Untungnya sirine dan lalu lintas cukup berbeda secara rata-rata sehingga akurasi tetap tinggi (98,33%). Jika ada campuran suara sirine ambulans , traffic, dan sirine lain, kemungkinan akurasi yg didapatkan tidak setinggi itu. Harus analisis lebih jauh (Fatal)
+8. Halaman 56, pengujian jarak tidak jelas (jarak yg diujikan sebenarnya berapa)
+9. Kuantisasi (Kode 4.16) disebut "memperkecil ukuran" tetapi ukuran sebelum/sesudah tidak pernah ditampilkan.
+(✓) 10. Modul sensor infrared tidak digunakan, tapi disebutkan di kebutuhan perangkat keras --> (3.2 kebutuhan perangkat keras)
+
+Pembimbing 2: Andika Setiawan, S.Kom., M.Cs.
+(✓) 1. Kroscek kembali pengaturan halaman laporan dan cek kesamaan dengan laporan yang sudah dicetak oleh TA yang sudah selesai --> (format penomoran, margin, ukuran kertas, font, ukuran font)
+2. Tambahkan alasan penentuan jumlah fitur
+3. Tambahkan analisis hasil CNN untuk hasil dari hyperparameter yang sudah dilakukan di BAB 4
+4. Simplifikasi penulisan Kesimpulan dengan tidak perlu menuliskan kembali rumusan masalah
+
+Penguji 1: Muhammad Habib Algifari, S.Kom., M.TI.
+1. Ilustrasi dan tahapan metode MFCC dan klasifikasi tiny ML nya perlu diperjelas lagi secara step by step (diperjelas dengan rinci di BAB 3, seperti apa processnya)
+
+Penguji 2: Eko Dwi Nugroho, S.Kom., M.Cs.
+1. Alat dioptimalkan
+
+

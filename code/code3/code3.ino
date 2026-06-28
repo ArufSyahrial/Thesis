@@ -1,8 +1,9 @@
 #include <Arduino.h>
 #include "driver/i2s.h"
+//#include <TensorFlowLite.h>
 #include "tensorflow/lite/micro/micro_interpreter.h"
 #include "tensorflow/lite/micro/micro_mutable_op_resolver.h"
-#include "tensorflow/lite/micro/system_setup.h"
+//#include "tensorflow/lite/micro/system_setup.h"
 #include "tensorflow/lite/schema/schema_generated.h"
 #include "model_ambulance_siren_int8.h"
 

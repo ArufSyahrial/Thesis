@@ -23,7 +23,7 @@ Pembimbing 2: Andika Setiawan, S.Kom., M.Cs.
 (✓) 6. Sebaiknya dipastikan kembali scope penelitian yang akan diselesaikan
 (✓) 7. Dokumen laporan perlu disesuaikan dengan format yang ada
 (✓) 8. Persiapan sebelum seminar perlu dibenahi, khususnya untuk konfirmasi ke dosen
-9. Kesimpulan berdasarkan rumusan masalah
+(✓) 9. Kesimpulan berdasarkan rumusan masalah
 
 
 Penguji 1: Winda Yulita, M.Cs.

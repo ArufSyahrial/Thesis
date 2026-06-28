@@ -1,3 +1,0 @@
-1. Clip pertama menunjukkan keadaan persimpangan dalam keadaan normal, dan disertakan clip serial monitor.
-2. Clip kedua menunjukkan keadaan sensor mic ke-1 Ketika mendeteksi suara sirine ambulans, dan disertakan clip serial monitor.
-3. Clip kedua menunjukkan keadaan sensor mic ke-2 Ketika mendeteksi suara sirine ambulans, dan disertakan clip serial monitor.
