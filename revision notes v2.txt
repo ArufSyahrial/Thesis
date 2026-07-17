@@ -1,25 +1,53 @@
 Pembimbing 1: Ilham Firman Ashari, S.Kom., M.T.
-1. Kuantisasi (Kode 4.16) disebut "memperkecil ukuran" tetapi ukuran sebelum/sesudah tidak pernah ditampilkan. Interpreter yang dipakai di ESP32 (TFLite Micro / EloquentTinyML) dan kode inferensinya juga tidak ditunjukkan, storage kapasitas ESP 32
-2.prioritas layanan ambulans??? dibagian mana? sesuaikan lagi judul dan isi laporan
-(✓) 3. tata tulis disesuaikan kembali --> (format penomoran, margin, ukuran kertas, font, ukuran font)
-4. analisis model CNN tidak ada
-5. kuantisasi model
-6. judul tidak sinkron dgn isi
-7. Kode 4.1, baris np.mean(mfccs.T, axis=0) merata-ratakan seluruh frame waktu, sehingga tinggal satu vektor 40 angka per file yg menyebabkan dimensi waktu hilang. Konsekuensinya suara sirine yang paling khas, yakni nada yang naik-turun berulang sepanjang waktu, ikut terhapus karena dirata-ratakan. Model hanya melihat profil frekuensi rata-rata. Untungnya sirine dan lalu lintas cukup berbeda secara rata-rata sehingga akurasi tetap tinggi (98,33%). Jika ada campuran suara sirine ambulans , traffic, dan sirine lain, kemungkinan akurasi yg didapatkan tidak setinggi itu. Harus analisis lebih jauh (Fatal)
-8. Halaman 56, pengujian jarak tidak jelas (jarak yg diujikan sebenarnya berapa)
-9. Kuantisasi (Kode 4.16) disebut "memperkecil ukuran" tetapi ukuran sebelum/sesudah tidak pernah ditampilkan.
-(✓) 10. Modul sensor infrared tidak digunakan, tapi disebutkan di kebutuhan perangkat keras --> (3.2 kebutuhan perangkat keras)
+(✓) 1. Kuantisasi (Kode 4.16) disebut "memperkecil ukuran" tetapi ukuran sebelum/sesudah tidak pernah ditampilkan. --> (4.1.4 deployment, kode 4.17)
+2. Interpreter yang dipakai di ESP32 (TFLite Micro / EloquentTinyML) dan kode inferensinya juga tidak ditunjukkan, storage kapasitas ESP 32
+(✓) 3. Prioritas layanan ambulans??? dibagian mana? sesuaikan lagi judul dan isi laporan --> (judul)
+(✓) 4. tata tulis disesuaikan kembali --> (format penomoran, margin, ukuran kertas, font, ukuran font)
+(✓) 5. analisis model CNN tidak ada --> (4.1.2 modelling, setelah kode 4.12)
+(✓) 6. kuantisasi model --> (4.1.4 deployment, kode 4.17)
+(✓) 7. judul tidak sinkron dengan isi --> (judul)
+(✓) 8. Kode 4.1, baris np.mean(mfccs.T, axis=0) merata-ratakan seluruh frame waktu, sehingga tinggal satu vektor 40 angka per file yg menyebabkan dimensi waktu hilang. Konsekuensinya suara sirine yang paling khas, yakni nada yang naik-turun berulang sepanjang waktu, ikut terhapus karena dirata-ratakan. Model hanya melihat profil frekuensi rata-rata. Untungnya sirine dan lalu lintas cukup berbeda secara rata-rata sehingga akurasi tetap tinggi (98,33%). Jika ada campuran suara sirine ambulans , traffic, dan sirine lain, kemungkinan akurasi yg didapatkan tidak setinggi itu. Harus analisis lebih jauh (Fatal)
+(✓) 9. Halaman 56, pengujian jarak tidak jelas (jarak yg diujikan sebenarnya berapa) --> (4.2.1 implementasi perangkat keras, setelah gambar 4.5)
+(✓) 10. Kuantisasi (Kode 4.16) disebut "memperkecil ukuran" tetapi ukuran sebelum/sesudah tidak pernah ditampilkan. --> (4.1.4 deployment, kode 4.17)
+(✓) 11. Modul sensor infrared tidak digunakan, tapi disebutkan di kebutuhan perangkat keras --> (3.2 kebutuhan perangkat keras)
 
 Pembimbing 2: Andika Setiawan, S.Kom., M.Cs.
 (✓) 1. Kroscek kembali pengaturan halaman laporan dan cek kesamaan dengan laporan yang sudah dicetak oleh TA yang sudah selesai --> (format penomoran, margin, ukuran kertas, font, ukuran font)
-2. Tambahkan alasan penentuan jumlah fitur
-3. Tambahkan analisis hasil CNN untuk hasil dari hyperparameter yang sudah dilakukan di BAB 4
-4. Simplifikasi penulisan Kesimpulan dengan tidak perlu menuliskan kembali rumusan masalah
+(✓) 2. Tambahkan alasan penentuan jumlah fitur --> (3.4.3 modelling, sebelah tabel hyperparameter)
+(✓) 3. Tambahkan analisis hasil CNN untuk hasil dari hyperparameter yang sudah dilakukan di BAB 4 --> (4.1.2 modelling, setelah kode 4.12)
+(✓) 4. Simplifikasi penulisan Kesimpulan dengan tidak perlu menuliskan kembali rumusan masalah --> (5.1 kesimpulan)
 
 Penguji 1: Muhammad Habib Algifari, S.Kom., M.TI.
-1. Ilustrasi dan tahapan metode MFCC dan klasifikasi tiny ML nya perlu diperjelas lagi secara step by step (diperjelas dengan rinci di BAB 3, seperti apa processnya)
+(✓) 1. Ilustrasi dan tahapan metode MFCC dan klasifikasi tiny ML nya perlu diperjelas lagi secara step by step (diperjelas dengan rinci di BAB 3, seperti apa processnya) --> (3.4.2 data preprocessing)
 
 Penguji 2: Eko Dwi Nugroho, S.Kom., M.Cs.
 1. Alat dioptimalkan
 
+Bimbingan Senin 06/07/2026
+(✓) 1. Ringkas abstrak menjadi 1 halaman atau 2 halaman full --> (abstrak)
+(✓) 2. Kenapa pakai function np.mean? Kenapa pakai mean? --> (4.1.1 data preprocessing, penjelasan kode 4.1)
+(✓) 3. Poin kesimpulan berdasarkan rumusan masalah --> (5.1 kesimpulan)
+(✓) 4. Rumusan 1 / kesimpulan jelaskan kesatuan sistem
+(✓) 5. Rumusan 3 /kesimpulan jelaskan hasil pengujian
+(✓) 6. Rincikan pengujian di bab 3, jarak ditambah --> (3.5.1 pengujian perangkat keras, 3.5.2 pengujian model tinyml)
+(✓) 7. Jelaskan analisis apakah pengujian latensi berhasil atau tidak --> (4.2.3 pengujian model tinyml, indikator keberhasilan 15 detik dihapus & diubah menjadi rata-rata Waktu dari 3 percobaan)
+(✓) 8. Bab 3, jelaskan jumlah komponen, kenapa sebanyak itu? Jelaskan design perangkat keras. --> (3.3.3 diagram sistem)
+(✓) 9. Bab 3, beri penomoran di komponen --> (3.3.2 rancangan perangkat keras)
 
+Tambahan:
+(✓) 1. kode dibikin margin & nomor baris
+(✓) 2. kesimpulan sebanyak rumusan masalah --> (5.1 kesimpulan)
+3. bolak-balik dari halaman mana? --> (bab 1)
+(✓) 4. daftar rumus
+(✓) 5. keterangan per rumus
+(✓) 6. form revisi
+7. update nomor halaman sebelum cetak, sebelum bab 1 nomor halaman di kanan atas
+8. pastikan judul 16 kata
+9. lampiran full untuk prodi
+10. daftar lampiran
+11. lampiran barcode untuk perpus
+12. cek Turnitin sebelum cetak
+13. tanda tangan pengesahan, turnitin, surat mengikuti siding
+14. surat bebas prodi
+15. gform bebas prodi
+16. surat yang discan harus format full halaman unesco untuk repo perpus
