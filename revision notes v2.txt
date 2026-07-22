@@ -1,4 +1,4 @@
-Pembimbing 1: Ilham Firman Ashari, S.Kom., M.T.
+Pembimbing 1: Ilham Firman Ashari, S.Kom., M.T. // NIP. 19930314 201903 1 018
 (✓) 1. Kuantisasi (Kode 4.16) disebut "memperkecil ukuran" tetapi ukuran sebelum/sesudah tidak pernah ditampilkan. --> (4.1.4 deployment, kode 4.17)
 2. Interpreter yang dipakai di ESP32 (TFLite Micro / EloquentTinyML) dan kode inferensinya juga tidak ditunjukkan, storage kapasitas ESP 32
 (✓) 3. Prioritas layanan ambulans??? dibagian mana? sesuaikan lagi judul dan isi laporan --> (judul)
@@ -11,16 +11,16 @@ Pembimbing 1: Ilham Firman Ashari, S.Kom., M.T.
 (✓) 10. Kuantisasi (Kode 4.16) disebut "memperkecil ukuran" tetapi ukuran sebelum/sesudah tidak pernah ditampilkan. --> (4.1.4 deployment, kode 4.17)
 (✓) 11. Modul sensor infrared tidak digunakan, tapi disebutkan di kebutuhan perangkat keras --> (3.2 kebutuhan perangkat keras)
 
-Pembimbing 2: Andika Setiawan, S.Kom., M.Cs.
+Pembimbing 2: Andika Setiawan, S.Kom., M.Cs. // NIP. 19911127 2022 03 1 007
 (✓) 1. Kroscek kembali pengaturan halaman laporan dan cek kesamaan dengan laporan yang sudah dicetak oleh TA yang sudah selesai --> (format penomoran, margin, ukuran kertas, font, ukuran font)
 (✓) 2. Tambahkan alasan penentuan jumlah fitur --> (3.4.3 modelling, sebelah tabel hyperparameter)
 (✓) 3. Tambahkan analisis hasil CNN untuk hasil dari hyperparameter yang sudah dilakukan di BAB 4 --> (4.1.2 modelling, setelah kode 4.12)
 (✓) 4. Simplifikasi penulisan Kesimpulan dengan tidak perlu menuliskan kembali rumusan masalah --> (5.1 kesimpulan)
 
-Penguji 1: Muhammad Habib Algifari, S.Kom., M.TI.
+Penguji 1: Muhammad Habib Algifari, S.Kom., M.TI. // NIP. 19910525 2022 03 1 002
 (✓) 1. Ilustrasi dan tahapan metode MFCC dan klasifikasi tiny ML nya perlu diperjelas lagi secara step by step (diperjelas dengan rinci di BAB 3, seperti apa processnya) --> (3.4.2 data preprocessing)
 
-Penguji 2: Eko Dwi Nugroho, S.Kom., M.Cs.
+Penguji 2: Eko Dwi Nugroho, S.Kom., M.Cs. // NIP. 19910209 202406 1 001
 1. Alat dioptimalkan
 
 Bimbingan Senin 06/07/2026
@@ -50,8 +50,12 @@ Tambahan:
 (✓) 9. lampiran full untuk prodi
 (✓) 10. daftar lampiran untuk prodi
 (✓) 11. lampiran barcode untuk perpus & tidak ada daftar lampiran
-12. cek Turnitin sebelum cetak
-13. tanda tangan pengesahan, surat turnitin, surat mengikuti sidang, foto 2x3 4 lembar
-14. surat bebas prodi
-15. gform bebas prodi
-16. surat yang discan harus format full halaman unesco untuk repo perpus
+(✓) 12. cek Turnitin sebelum cetak
+(✓) 13. foto 2x3 4 lembar
+--> 14. tanda tangan pengesahan (pembimbing 1, pembimbing 2, penguji 1, penguji 2)
+--> 15. surat turnitin (pembimbing 1)
+(✓) 16. surat turnitin digital 
+--> 17. surat mengikuti sidang & materai 10rb (pembimbing 1) 
+--> 18. surat bebas prodi (MCU & kaprodi)
+--> 19. gform bebas prodi
+20. surat yang discan harus format full halaman unesco untuk repo perpus
